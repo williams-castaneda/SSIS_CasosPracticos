@@ -1,0 +1,320 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="5/1/2024 5:59:35 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="WILLIAMSPC"
+  DTS:CreatorName="WILLIAMSPC\Williams"
+  DTS:DTSID="{29138F23-8598-4A27-8FF6-F7DD93B3B3B9}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5397.1"
+  DTS:LocaleID="10250"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="5"
+  DTS:VersionGUID="{F7DA600F-10D5-4483-AC0E-E3E409B0D480}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LibroXPath.xml]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{0091D764-D497-4BC2-A628-0F2911553DA5}"
+      DTS:ObjectName="LibroXPath.xml">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\Williams\OneDrive\Aprendizaje Autonomo\SSIS\SSIS_CasosPracticos\XML Task\Utilizando XML Task - Parte2\XPath\LibroXPath.xml" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LibroXPathNodeListResult.xml]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{121EE8CA-1D79-4EF4-A06F-F7B46B0C1FDD}"
+      DTS:ObjectName="LibroXPathNodeListResult.xml">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:FileUsageType="1"
+          DTS:ConnectionString="C:\Users\Williams\OneDrive\Aprendizaje Autonomo\SSIS\SSIS_CasosPracticos\XML Task\Utilizando XML Task - Parte2\XPath\LibroXPathNodeListResult.xml" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LibroXPathValueResult.xml]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{99A813E3-3515-4E5C-917A-324749ED4460}"
+      DTS:ObjectName="LibroXPathValueResult.xml">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:FileUsageType="1"
+          DTS:ConnectionString="C:\Users\Williams\OneDrive\Aprendizaje Autonomo\SSIS\SSIS_CasosPracticos\XML Task\Utilizando XML Task - Parte2\XPath\LibroXPathValueResult.xml" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[ValidateLibros.xml]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{51E8E4D5-5782-4D5A-9629-ED841D6DAD6C}"
+      DTS:ObjectName="ValidateLibros.xml">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\Williams\OneDrive\Aprendizaje Autonomo\SSIS\SSIS_CasosPracticos\XML Task\Utilizando XML Task - Parte2\Validate\ValidateLibros.xml" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[ValidateLibros.xsd]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{D740B0F8-AEAD-4793-8D63-CE88F1AF2A72}"
+      DTS:ObjectName="ValidateLibros.xsd">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\Williams\OneDrive\Aprendizaje Autonomo\SSIS\SSIS_CasosPracticos\XML Task\Utilizando XML Task - Parte2\Validate\ValidateLibros.xsd" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[ValidateLibrosDTD.xml]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{C6560B38-93B5-44B0-826E-DDF106EE9C1C}"
+      DTS:ObjectName="ValidateLibrosDTD.xml">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\Williams\OneDrive\Aprendizaje Autonomo\SSIS\SSIS_CasosPracticos\XML Task\Utilizando XML Task - Parte2\Validate\ValidateLibrosDTD.xml" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[ValidateLibrosDTDResult.xml]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{1FE4900B-D692-46DD-A864-A4578D5503BB}"
+      DTS:ObjectName="ValidateLibrosDTDResult.xml">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:FileUsageType="1"
+          DTS:ConnectionString="C:\Users\Williams\OneDrive\Aprendizaje Autonomo\SSIS\SSIS_CasosPracticos\XML Task\Utilizando XML Task - Parte2\Validate\ValidateLibrosDTDResult.xml" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[ValidateLibrosXSDResult.xml]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{24B405C4-6BC2-4DED-951D-15BE65A29A61}"
+      DTS:ObjectName="ValidateLibrosXSDResult.xml">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:FileUsageType="1"
+          DTS:ConnectionString="C:\Users\Williams\OneDrive\Aprendizaje Autonomo\SSIS\SSIS_CasosPracticos\XML Task\Utilizando XML Task - Parte2\Validate\ValidateLibrosXSDResult.xml" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Tarea XML DTD"
+      DTS:CreationName="Microsoft.XMLTask"
+      DTS:Description="Tarea XML"
+      DTS:DTSID="{431FB7DC-51D8-42F7-A537-000AA70C7842}"
+      DTS:ExecutableType="Microsoft.XMLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Tarea XML DTD"
+      DTS:TaskContact="XML Task; Microsoft Corporation; SQL Server 2022; � 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <XMLTaskData
+          OperationType="Validate"
+          Source="ValidateLibrosDTD.xml"
+          SaveOperationResult="True"
+          Destination="ValidateLibrosDTDResult.xml"
+          OverwriteDestination="True"
+          ValidationType="DTD"
+          ValidationDetails="True" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Tarea XML Validate XSD"
+      DTS:CreationName="Microsoft.XMLTask"
+      DTS:Description="Tarea XML"
+      DTS:DTSID="{6B715224-D5B3-425B-913E-58FC0845914D}"
+      DTS:ExecutableType="Microsoft.XMLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Tarea XML Validate XSD"
+      DTS:TaskContact="XML Task; Microsoft Corporation; SQL Server 2022; � 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <XMLTaskData
+          OperationType="Validate"
+          Source="ValidateLibros.xml"
+          SecondOperandType="FileConnection"
+          SecondOperand="ValidateLibros.xsd"
+          SaveOperationResult="True"
+          Destination="ValidateLibrosXSDResult.xml"
+          OverwriteDestination="True"
+          ValidationDetails="True" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Tarea XML XPath Nodo"
+      DTS:CreationName="Microsoft.XMLTask"
+      DTS:Description="Tarea XML"
+      DTS:DTSID="{2BA466C5-152D-4719-96DA-BBBDC174F06C}"
+      DTS:ExecutableType="Microsoft.XMLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Tarea XML XPath Nodo"
+      DTS:TaskContact="XML Task; Microsoft Corporation; SQL Server 2022; � 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <XMLTaskData
+          OperationType="XPATH"
+          Source="LibroXPath.xml"
+          SecondOperand="/books/book/authors"
+          SaveOperationResult="True"
+          Destination="LibroXPathNodeListResult.xml"
+          OverwriteDestination="True"
+          XPathOperation="NodeList" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Tarea XML XPath Value"
+      DTS:CreationName="Microsoft.XMLTask"
+      DTS:Description="Tarea XML"
+      DTS:DTSID="{4B71168F-89EE-4268-85EE-772EE3AED1C4}"
+      DTS:ExecutableType="Microsoft.XMLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Tarea XML XPath Value"
+      DTS:TaskContact="XML Task; Microsoft Corporation; SQL Server 2022; � 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <XMLTaskData
+          OperationType="XPATH"
+          Source="LibroXPath.xml"
+          SecondOperand="/books/book/title"
+          SaveOperationResult="True"
+          Destination="LibroXPathValueResult.xml"
+          OverwriteDestination="True"
+          XPathOperation="Values" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción]"
+      DTS:CreationName=""
+      DTS:DTSID="{FE98B772-A0D2-485D-9A47-BA1230911045}"
+      DTS:From="Package\Tarea XML Validate XSD"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción"
+      DTS:To="Package\Tarea XML DTD" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{32EB3C1A-15FF-4419-97F6-DB5AAD802858}"
+      DTS:From="Package\Tarea XML DTD"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 1"
+      DTS:To="Package\Tarea XML XPath Nodo" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{DF7C8FDE-41AF-45DB-8437-0161956BD388}"
+      DTS:From="Package\Tarea XML XPath Nodo"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 2"
+      DTS:To="Package\Tarea XML XPath Value" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<Objects
+  Version="8">
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="202,42"
+          Id="Package\Tarea XML Validate XSD"
+          TopLeft="290,64" />
+        <NodeLayout
+          Size="159,42"
+          Id="Package\Tarea XML DTD"
+          TopLeft="309,170" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción]"
+          TopLeft="389.75,106">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,64"
+              Start="0,0"
+              End="0,56.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,56.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="195,42"
+          Id="Package\Tarea XML XPath Nodo"
+          TopLeft="290,281" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 1]"
+          TopLeft="388,212">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,69"
+              Start="0,0"
+              End="0,61.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,61.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="197,42"
+          Id="Package\Tarea XML XPath Value"
+          TopLeft="285,389" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 2]"
+          TopLeft="385.5,323">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,66"
+              Start="0,0"
+              End="0,58.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,58.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

@@ -1,0 +1,280 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="5/1/2024 5:16:39 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="WILLIAMSPC"
+  DTS:CreatorName="WILLIAMSPC\Williams"
+  DTS:DTSID="{13BC71AC-440C-497B-AE01-F23F6C3B56DF}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5397.1"
+  DTS:LocaleID="10250"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="8"
+  DTS:VersionGUID="{8346C771-3046-4C61-8E03-979ACA7533A5}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones HTTP]"
+      DTS:CreationName="HTTP"
+      DTS:DTSID="{52BBFF5A-41B3-4DDD-8BC1-1A07FEAE18E9}"
+      DTS:ObjectName="Administrador de conexiones HTTP">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="https://footballpool.dataaccess.eu/info.wso?WSDL">
+          <DTS:HttpConnection
+            DTS:ServerURL="https://footballpool.dataaccess.eu/info.wso?WSDL">
+            <DTS:Property
+              DTS:Name="ServerPassword"
+              Sensitive="1"
+              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA774NkuK7ekqqkwnbZuACZQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABLzTfQE0KagvC199unDndAh0PM0TOzY7mXVufw2j32kQAAAAAOgAAAAAIAACAAAADsJ87ZGSHPZtkOxvfhD+HJg+lKqdZUR4klV5XYflTXVRAAAAD2Db0fWr/acLkjiWjQR8GJQAAAADOOw7JYy9pSkFZ0YYRlqZFwtlJhK/tcYXOLAOrmfYVR9gv0Dkf+Xk6f4mG2tiCAwPnaxAXWuxMwVW1vjvo67HY</DTS:Property>
+            <DTS:Property
+              DTS:Name="ProxyPassword"
+              Sensitive="1"
+              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA774NkuK7ekqqkwnbZuACZQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB2uPYJILxwg5ADWxnoe7Si1Cuu6iuVjXQWM+3RjN4x9gAAAAAOgAAAAAIAACAAAADprHoAjivGpGrZpGKHBoNzEzpDjpwcWnwIQDu+vqDZqhAAAAA/z1j0xvvhxLKi4cithddlQAAAAMBApNHrj21cFr+9EfTaKZJ9H4kAlgcGhXkiYkKMkyVCJBFpWBfEmk1W386L3B2TowgXcUJb2OqyAkXig/MMOb8</DTS:Property>
+          </DTS:HttpConnection>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones HTTP 1]"
+      DTS:CreationName="HTTP"
+      DTS:DTSID="{82C26BAC-9054-4304-B10C-0FFEE2B8DE8B}"
+      DTS:ObjectName="Administrador de conexiones HTTP 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL">
+          <DTS:HttpConnection
+            DTS:ServerURL="http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL">
+            <DTS:Property
+              DTS:Name="ServerPassword"
+              Sensitive="1"
+              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA774NkuK7ekqqkwnbZuACZQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABC4KuQbO0nh1jjLrNTf6Kf/PBJMDx2UjYVPZC1SjTE0AAAAAAOgAAAAAIAACAAAAAZX8vFMiI+zf2rjc7Rx955lwhenWJKKaa1K6u3YjFsNhAAAAAG61qnPkfQDcV784BowOvJQAAAADxQIG7ji+dor+OlOLo1KX7jHKUEL8TnIKITZygQK1aFUpV8TH7h/uOql4MFMv1JCE2GwH01dXlKFg817Ro3dPk</DTS:Property>
+            <DTS:Property
+              DTS:Name="ProxyPassword"
+              Sensitive="1"
+              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA774NkuK7ekqqkwnbZuACZQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACHAZ/b9+ZhOVSQI7x1+tkqNTXxJavphCcF1Prb/+K5QwAAAAAOgAAAAAIAACAAAABgTAo4pTbPzh/NtKlAy9e4fwoMeJstwkg00cqdu2LVcBAAAAC9gr8P0eSwABYggso+sqZDQAAAACPXf73S4PfDPCE5R18jCVYN/tAP6ar+BIWEOccXiMFUkMaJYjpT0AfikL7vmqJ+O4ju3AJplY8YBUwte6oFZ/A</DTS:Property>
+          </DTS:HttpConnection>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[JugadoresConTarjetas.xml]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{AA3EFF6D-A0D4-4385-A2B7-F4FC980CC682}"
+      DTS:ObjectName="JugadoresConTarjetas.xml">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\Williams\OneDrive\Aprendizaje Autonomo\SSIS\SSIS_CasosPracticos\Consumir servicios Web Services\Consumir servicios de Web Services\JugadoresConTarjetas.xml" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[ListaPaisesMoneda.xml]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{05DAFCB1-241F-4B2B-92CD-F486A809926C}"
+      DTS:ObjectName="ListaPaisesMoneda.xml">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\Williams\OneDrive\Aprendizaje Autonomo\SSIS\SSIS_CasosPracticos\Consumir servicios Web Services\Consumir servicios de Web Services\ListaPaisesMoneda.xml" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Paises.xml]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{7AECE2CA-E5C6-4AA3-B768-DBCE6CA61CB2}"
+      DTS:ObjectName="Paises.xml">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\Williams\OneDrive\Aprendizaje Autonomo\SSIS\SSIS_CasosPracticos\Consumir servicios Web Services\Consumir servicios de Web Services\Paises.xml" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{FB8F4146-2587-4EBE-AFA8-AB9966F01010}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="CodigoISOMoneda">
+      <DTS:VariableValue
+        DTS:DataType="8">EUR</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Web Service Moneda por Pais"
+      DTS:CreationName="Microsoft.WebServiceTask"
+      DTS:Description="Web Service Task"
+      DTS:DTSID="{CE932A77-FB51-476A-A25D-8BF226FDE6A0}"
+      DTS:ExecutableType="Microsoft.WebServiceTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Web Service Moneda por Pais"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <WSTask:WebServiceTaskData
+          WSTask:ConnectionName="{82C26BAC-9054-4304-B10C-0FFEE2B8DE8B}"
+          WSTask:Service="CountryInfoService"
+          WSTask:WSDLFile="C:\Users\Williams\OneDrive\Aprendizaje Autonomo\SSIS\SSIS_CasosPracticos\Consumir servicios Web Services\Consumir servicios de Web Services\Paises.wsdl"
+          WSTask:OverwriteWSDLFile="True"
+          WSTask:OutputLocation="ListaPaisesMoneda.xml" xmlns:WSTask="www.microsoft.com/sqlserver/dts/tasks/webservicetask">
+          <WSTask:MethodInfo
+            WSTask:MethodName="CountriesUsingCurrency"
+            WSTask:MessageName="">
+            <WSTask:Documentation>Returns a list of all countries that use the same currency code. Pass a ISO currency code</WSTask:Documentation>
+            <WSTask:ParamInfo
+              WSTask:Name="sISOCurrencyCode"
+              WSTask:Datatype="string"
+              WSTask:ParamType="Variable"
+              WSTask:SeqNumber="0">
+              <WSTask:VariableValue>User::CodigoISOMoneda</WSTask:VariableValue>
+            </WSTask:ParamInfo>
+          </WSTask:MethodInfo>
+        </WSTask:WebServiceTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Web Service Paises"
+      DTS:CreationName="Microsoft.WebServiceTask"
+      DTS:Description="Web Service Task"
+      DTS:DTSID="{8E24A069-D3A4-4A66-B413-2B41A26A2923}"
+      DTS:ExecutableType="Microsoft.WebServiceTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Web Service Paises"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <WSTask:WebServiceTaskData
+          WSTask:ConnectionName="{82C26BAC-9054-4304-B10C-0FFEE2B8DE8B}"
+          WSTask:Service="CountryInfoService"
+          WSTask:WSDLFile="C:\Users\Williams\OneDrive\Aprendizaje Autonomo\SSIS\SSIS_CasosPracticos\Consumir servicios Web Services\Consumir servicios de Web Services\Paises.wsdl"
+          WSTask:OverwriteWSDLFile="True"
+          WSTask:OutputLocation="Paises.xml" xmlns:WSTask="www.microsoft.com/sqlserver/dts/tasks/webservicetask">
+          <WSTask:MethodInfo
+            WSTask:MethodName="ListOfCountryNamesGroupedByContinent"
+            WSTask:MessageName="">
+            <WSTask:Documentation>Returns a list of all stored counties grouped per continent</WSTask:Documentation>
+          </WSTask:MethodInfo>
+        </WSTask:WebServiceTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Web Services Futbol"
+      DTS:CreationName="Microsoft.WebServiceTask"
+      DTS:Description="Tarea Servicio Web"
+      DTS:DTSID="{157F7A97-F880-4691-AEB6-ADAFA6A7BB5F}"
+      DTS:ExecutableType="Microsoft.WebServiceTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Web Services Futbol"
+      DTS:TaskContact="Web Service Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <WSTask:WebServiceTaskData
+          WSTask:ConnectionName="{52BBFF5A-41B3-4DDD-8BC1-1A07FEAE18E9}"
+          WSTask:Service="Info"
+          WSTask:WSDLFile="C:\Users\Williams\OneDrive\Aprendizaje Autonomo\SSIS\SSIS_CasosPracticos\Consumir servicios Web Services\Consumir servicios de Web Services\Futbol.wsdl"
+          WSTask:OverwriteWSDLFile="True"
+          WSTask:OutputLocation="JugadoresConTarjetas.xml" xmlns:WSTask="www.microsoft.com/sqlserver/dts/tasks/webservicetask">
+          <WSTask:MethodInfo
+            WSTask:MethodName="PlayerRoles"
+            WSTask:MessageName="">
+            <WSTask:Documentation>Returns an array with the roles a player can have (defender etc)</WSTask:Documentation>
+          </WSTask:MethodInfo>
+        </WSTask:WebServiceTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción]"
+      DTS:CreationName=""
+      DTS:DTSID="{735A8E12-7D56-4F23-966A-2624879A34C0}"
+      DTS:From="Package\Web Services Futbol"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción"
+      DTS:To="Package\Web Service Paises" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{4E198908-15CE-417A-B6D1-F9282D54E52D}"
+      DTS:From="Package\Web Service Paises"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 1"
+      DTS:To="Package\Web Service Moneda por Pais" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<Objects
+  Version="8">
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="180,42"
+          Id="Package\Web Services Futbol"
+          TopLeft="414,122" />
+        <NodeLayout
+          Size="177,42"
+          Id="Package\Web Service Paises"
+          TopLeft="414,237" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción]"
+          TopLeft="503.25,164">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,73"
+              Start="0,0"
+              End="0,65.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,65.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="227,42"
+          Id="Package\Web Service Moneda por Pais"
+          TopLeft="664,235" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 1]"
+          TopLeft="591,257">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="73,0"
+              Start="0,0"
+              End="65.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="65.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
